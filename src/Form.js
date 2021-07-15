@@ -22,6 +22,7 @@ class Form extends React.Component{
          user:fin
      },()=>{
         console.log(this.state.user);
+        e.target.reset();
      })
      
     }
@@ -60,9 +61,9 @@ class Form extends React.Component{
             <form onSubmit = {this.handleInput} >
              <label> 
                  <div className = "form">  
-             <div> Email:<input type = "email" name = "email"></input></div>
-             <div> Title :<input type = "text" name = "title"></input></div>
-             <div>  Description :<input type = "text" name = "desc"></input></div>
+             <div> Email:<input type = "email" name = "email" required></input></div>
+             <div> Title :<input type = "text" name = "title" required></input></div>
+             <div>  Description :<input type = "text" name = "desc" required></input></div>
              <button class = "btn" type = "submit">Submit</button>
              </div>
              </label>
